@@ -13,8 +13,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Navigate to="/signin" />} />
       <Route path="/signin" element={<Signin />} />
-      <Route path="/api/developerSignup" element={<DeveloperSignup />} />
-      <Route path="/api/recruiterSignup" element={<RecruiterSignup />} />
+      <Route path="/developerSignup" element={<DeveloperSignup />} />
+      <Route path="/recruiterSignup" element={<RecruiterSignup />} />
 
       {/* Developer dashboard */}
       <Route path="/developer" element={

@@ -25,7 +25,7 @@ function RecruiterSignup() {
 
     try {
       const response = await axios.post(
-        "`${import.meta.env.VITE_API_URL}/api/recruiterSignup`",
+        `${import.meta.env.VITE_API_URL}/api/recruiterSignup`,
         formData
       );
 

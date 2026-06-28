@@ -19,7 +19,7 @@ function Signin() {
 
     try {
       const response = await axios.post(
-        "`${import.meta.env.VITE_API_URL}/api/signin`", // ✅ fixed URL
+        `${import.meta.env.VITE_API_URL}/api/signin`, // ✅ fixed URL
         signinData
       );
 
@@ -92,9 +92,9 @@ function Signin() {
 
         <div className="card-footer text-center">
           Don't have an account? <br />
-          <Link to="/api/developerSignup">Register as Developer</Link>
+          <Link to="/developerSignup">Register as Developer</Link>
           <br />
-          <Link to="/api/recruiterSignup">Register as Recruiter</Link>
+          <Link to="/recruiterSignup">Register as Recruiter</Link>
         </div>
       </div>
     </div>
